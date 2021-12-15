@@ -1,0 +1,7 @@
+<div class="container">
+    <div *ngIf="tunes | async">
+        <div *ngFor="let item of tunes | async">
+            <span [innerHtml]="item.title"></span>
+        </div>
+    </div>
+</div>
