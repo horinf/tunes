@@ -29,11 +29,4 @@ describe('AppComponent', () => {
     const app = fixture.componentInstance;
     expect(app.isScrolled).toEqual(false);
   });
-
-  // it('should render title', () => {
-  //   const fixture = TestBed.createComponent(AppComponent);
-  //   fixture.detectChanges();
-  //   const compiled = fixture.nativeElement as HTMLElement;
-  //   expect(compiled.querySelector('.container span')?.textContent).toContain('My Tunes - the music');
-  // });
 });
