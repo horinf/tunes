@@ -1,0 +1,16 @@
+/* You can add global styles to this file, and also import other style files */
+
+$grid-breakpoints: (
+  xs: 0,
+  sm: 370px,
+  md: 690px,
+  lg: 1020px,
+  xl: 1330px
+);
+
+$container-max-widths: (
+  sm: 350px,
+  md: 670px,
+  lg: 990px,
+  xl: 1310px
+);

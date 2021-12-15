@@ -9,6 +9,8 @@ import { ItunesClientService } from 'src/app/modules/api-client/clients/itunes-c
   styleUrls: ['./home-page.component.scss']
 })
 export class HomePageComponent implements OnInit, OnDestroy {
+  public isLoading$ = new BehaviorSubject<boolean>(true);
+  public error$ = new BehaviorSubject<string | null>(null);
   public tunes = new BehaviorSubject<TuneModel[] | null>(null);
 
   private unsubscriber = new Subscription();
@@ -28,13 +30,17 @@ export class HomePageComponent implements OnInit, OnDestroy {
   }
 
   private async loadItunes() {
+    this.isLoading$.next(true);
+    this.error$.next(null);
     try {
       const tuneCollection = await this.itunesClient.getTunes();
       if (tuneCollection) {
         this.tunes.next(tuneCollection.tunes);
       }
     } catch (error) {
-      console.error(error);
+      this.error$.next('An error occured while loading your tunes (');
+    } finally {
+      this.isLoading$.next(false);
     }
   }
 }
