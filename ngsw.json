@@ -1,6 +1,6 @@
 {
   "configVersion": 1,
-  "timestamp": 1639573501280,
+  "timestamp": 1639573931127,
   "index": "/tunes/index.html",
   "assetGroups": [
     {
@@ -18,9 +18,9 @@
         "/tunes/main.3c8e4b1758363516.js",
         "/tunes/manifest.webmanifest",
         "/tunes/polyfills.710cc2855804a3a1.js",
-        "/tunes/runtime.f8034f143d770052.js",
+        "/tunes/runtime.b132044f05b86479.js",
         "/tunes/scripts.27c1a090a67bf58d.js",
-        "/tunes/styles.b40f8ef4ba6f66b4.css"
+        "/tunes/styles.0da98e996b36ca63.css"
       ],
       "patterns": []
     },
@@ -50,7 +50,9 @@
         "/tunes/assets/icons/icon-512x512.png",
         "/tunes/assets/icons/icon-72x72.png.png",
         "/tunes/assets/icons/icon-96x96.png",
-        "/tunes/assets/logo.png"
+        "/tunes/assets/logo.png",
+        "/tunes/icon-bookmark.bbe320455f5dff9e.svg",
+        "/tunes/icon-play.e21d6885d4e767f0.svg"
       ],
       "patterns": []
     }
@@ -79,13 +81,15 @@
     "/tunes/assets/icons/icon-96x96.png": "a696ff3001cc7c77cdfe6e1cec56a2f450a687bb",
     "/tunes/assets/logo.png": "0eca53ede3326745a19b767685142351ccfc9aec",
     "/tunes/favicon.ico": "c1c98445519a74ef6cd125fdcac9779659f30ab1",
-    "/tunes/index.html": "7397f3afcad772c06e80cfe50fdedc165b16359f",
+    "/tunes/icon-bookmark.bbe320455f5dff9e.svg": "3dc58a915b9ad8fbf7fe91c5de74d9fe49a3d200",
+    "/tunes/icon-play.e21d6885d4e767f0.svg": "011299e3774c357b68e30ae645fc93787309067e",
+    "/tunes/index.html": "627c1ef86e08c6a510348d32a61fa9897fc58dd1",
     "/tunes/main.3c8e4b1758363516.js": "bf53d14dfa259aa5eea59ca36fcbdb6c3b10f55c",
     "/tunes/manifest.webmanifest": "dbfa48e48523c86d96aa7fd4ead458106898bb75",
     "/tunes/polyfills.710cc2855804a3a1.js": "27c264791768aab09e0f6e93a2a7f2a9719fb202",
-    "/tunes/runtime.f8034f143d770052.js": "7a6efe31d5055b9024a78e39611ac90b2e18cfc1",
+    "/tunes/runtime.b132044f05b86479.js": "0c6d035462666eb058e9eee11fa619b17d4ec5ee",
     "/tunes/scripts.27c1a090a67bf58d.js": "d7a5ef3e81899159aa4ed567f4e346d01104b94e",
-    "/tunes/styles.b40f8ef4ba6f66b4.css": "04494d6b5b1efef17e4d4e6481c3e98828607c34"
+    "/tunes/styles.0da98e996b36ca63.css": "6b1c116005bcc62d15a209b4a855b18e2ffc2837"
   },
   "navigationUrls": [
     {

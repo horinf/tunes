@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg width="13px" height="20px" viewBox="0 0 13 20" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <path d="M0 0L0 19.759L6.5 14.9398L13 19.759L13 0L0 0Z" transform="translate(5.3290705E-15 0.08726747)" id="path_1" />
+    <clipPath id="clip_1">
+      <use xlink:href="#path_1" />
+    </clipPath>
+  </defs>
+  <g id="noun_Add-Bookmark_1633759">
+    <g id="Group">
+      <g id="Path">
+        <g clip-path="url(#clip_1)">
+          <use xlink:href="#path_1" fill="none" stroke="#000000" stroke-width="2" />
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>
