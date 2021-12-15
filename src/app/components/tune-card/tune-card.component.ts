@@ -40,5 +40,9 @@ export class TuneCardComponent implements OnInit {
     const isFav = this.favoritesService.toggle(this._tune.id); 
     this.isFavorite$.next(isFav);
   }
+
+  linkClick(event: Event) {
+    event.stopPropagation();
+  }
 }
 
