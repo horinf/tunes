@@ -1,0 +1,12 @@
+<div class="header-container py-2">
+    <div class="container d-flex align-items-center">
+        <a [routerLink]="['/']" class="d-flex align-items-center">
+            <img class="d-block logo-image mr-3" src="assets/logo.png" />
+            <span class="d-none d-md-block">My tunes</span>
+        </a>
+        <div class="ml-auto">
+            <input type="text" class="form-control d-block" [(ngModel)]="searchString" (input)="search()"
+              placeholder="search">
+          </div>
+    </div>
+</div>

@@ -4,6 +4,7 @@ import { ApiClientRequestHandlerService } from 'src/app/modules/api-client/servi
 import { ApiClientRouteBuilderService } from 'src/app/modules/api-client/services/api-client-route-builder.service';
 import { HttpClientTestingModule } from '@angular/common/http/testing';
 import { HomePageComponent } from './home-page.component';
+import { LoadingStateModule } from 'src/app/components/loading-state/loading-state.module';
 
 describe('HomePageComponent', () => {
   let component: HomePageComponent;
@@ -18,7 +19,8 @@ describe('HomePageComponent', () => {
         ApiClientRequestHandlerService,
       ],
       imports: [
-        HttpClientTestingModule
+        HttpClientTestingModule,
+        LoadingStateModule,
       ]
     })
     .compileComponents();

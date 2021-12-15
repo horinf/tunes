@@ -1,0 +1,44 @@
+.outer-wrapper {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+  }
+  
+  .content-wrapper {
+    -webkit-box-flex: 1;
+    -ms-flex: 1 0 auto;
+    flex: 1 0 auto;
+  }
+  
+  @media (min-height: 500px) {
+    .header-fixed-padding {
+      padding-top: 46px; // compensate for the fixed title (otherwise the page jumps to the top), 46px - height of header
+    }
+  
+    .header-sticky-top {
+      // position: -webkit-sticky; // quite convenient, but not supported everywhere
+      // position: sticky;
+      // top: 0;
+  
+      position: fixed;
+      top: 0px;
+      left: 0;
+      right: 0;
+  
+      z-index: 1025;
+      background-color: white;
+    }
+  
+    .header-sticky-top {
+      .logo-image {
+        height: 30px;
+      }
+  
+      .logo-image-container {
+        padding-top: 10px;
+        padding-bottom: 10px;
+      }
+  
+    }
+  }
+  

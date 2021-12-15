@@ -6,6 +6,7 @@
   margin: 10px 0px 15px 0px;
   padding: 10px 10px 25px 10px;
   position: relative;
+  background-color: #fafafa;
 }
 
 .tune-img-container {
@@ -40,6 +41,14 @@
   right: 0px;
 }
 
+.back-gradient {
+  background: -moz-linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, #ffffff 100%);
+  background: -webkit-linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, #ffffff 100%);
+  background: -o-linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, #ffffff 100%);
+  background: -ms-linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, #ffffff 100%);
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, #ffffff 100%);
+}
+
 @media (min-width: map-get($map: $grid-breakpoints, $key: md)) {
   .tune-item {
     width: 300px;
@@ -50,5 +59,22 @@
     border: 1px solid rgba(128, 128, 128, 0.4);
     border-radius: 5px;
     padding: 10px;
+
+    transition: all .3s ease-out 0s;
+  }
+
+  .tune-item:hover {
+    background-color: #eeeaea;
+    min-height: 190px;
+    height: auto;
+    padding-bottom: 40px;
+  }
+
+  .back-gradient {
+    background: -moz-linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, #f5f5f5 100%);
+    background: -webkit-linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, #f5f5f5 100%);
+    background: -o-linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, #f5f5f5 100%);
+    background: -ms-linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, #f5f5f5 100%);
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, #f5f5f5 100%);
   }
 }

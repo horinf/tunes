@@ -1,9 +1,7 @@
 <div class="outer-wrapper">
-  <div class="content-wrapper">
-    <div>
-      <div class="container">
-        <span>My Tunes - the music</span>
-      </div>
+  <div class="content-wrapper" [ngClass]="{'header-fixed-padding': isScrolled$ | async}">
+    <div [ngClass]="{'header-sticky-top': isScrolled$ | async}">
+      <app-site-header></app-site-header>
       <div class="horizontal-seporator"></div>
     </div>
 
@@ -12,5 +10,6 @@
     </div>
   </div>
   <div class="footer-wrapper mt-3">
+    <app-site-footer></app-site-footer>
   </div>
 </div>

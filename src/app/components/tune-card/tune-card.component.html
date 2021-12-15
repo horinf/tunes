@@ -1,21 +1,21 @@
 <div class="tune-item d-flex flex-column" *ngIf="tune">
-    <div class="d-flex">
-        <div class="tune-img-container">
-            <img *ngIf="tune.imageUrl" [src]="tune.imageUrl" class="tune-img">
-        </div>
-        <div class="pl-2 flex-grow-1">
-            <div class="category-conteiner">
-                <span [innerHtml]="tune.category"></span>
-            </div>
-            <div class="artist-container">
-                <span [innerHtml]="tune.artist"></span>
-            </div>
-        </div>
+  <div class="d-flex">
+    <div class="tune-img-container">
+      <img *ngIf="tune.imageUrl" [src]="tune.imageUrl" class="tune-img">
     </div>
-    <div class="pt-2">
-        <span [innerHtml]="tune.title"></span>
+    <div class="pl-2 flex-grow-1">
+      <div class="category-conteiner">
+        <span [innerHtml]="tune.category"></span>
+      </div>
+      <div class="artist-container">
+        <span [innerHtml]="tune.artist"></span>
+      </div>
     </div>
-    <div *ngIf="tune.link" class="link-container back-gradient">
-        <a [href]="tune.link" target="_blank">play</a>
-    </div>
+  </div>
+  <div class="pt-2">
+    <span [innerHtml]="tune.title"></span>
+  </div>
+  <div *ngIf="tune.link" class="link-container back-gradient">
+    <a [href]="tune.link" target="_blank">play</a>
+  </div>
 </div>

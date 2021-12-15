@@ -1,12 +1,16 @@
 import { TestBed } from '@angular/core/testing';
 import { RouterTestingModule } from '@angular/router/testing';
 import { AppComponent } from './app.component';
+import { SiteFooterModule } from './modules/site-footer/site-footer.module';
+import { SiteHeaderModule } from './modules/site-header/site-header.module';
 
 describe('AppComponent', () => {
   beforeEach(async () => {
     await TestBed.configureTestingModule({
       imports: [
-        RouterTestingModule
+        RouterTestingModule,
+        SiteHeaderModule,
+        SiteFooterModule,
       ],
       declarations: [
         AppComponent
@@ -20,10 +24,16 @@ describe('AppComponent', () => {
     expect(app).toBeTruthy();
   });
 
-  it('should render title', () => {
+  it(`should have isScrolled 'false' by default`, () => {
     const fixture = TestBed.createComponent(AppComponent);
-    fixture.detectChanges();
-    const compiled = fixture.nativeElement as HTMLElement;
-    expect(compiled.querySelector('.container span')?.textContent).toContain('My Tunes - the music');
+    const app = fixture.componentInstance;
+    expect(app.isScrolled).toEqual(false);
   });
+
+  // it('should render title', () => {
+  //   const fixture = TestBed.createComponent(AppComponent);
+  //   fixture.detectChanges();
+  //   const compiled = fixture.nativeElement as HTMLElement;
+  //   expect(compiled.querySelector('.container span')?.textContent).toContain('My Tunes - the music');
+  // });
 });
