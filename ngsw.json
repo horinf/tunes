@@ -1,0 +1,105 @@
+{
+  "configVersion": 1,
+  "timestamp": 1639563707423,
+  "index": "/tunes/index.html",
+  "assetGroups": [
+    {
+      "name": "app",
+      "installMode": "prefetch",
+      "updateMode": "prefetch",
+      "cacheQueryOptions": {
+        "ignoreVary": true
+      },
+      "urls": [
+        "/tunes/914.1f9ca82c00f2a18a.js",
+        "/tunes/939.2e3806f81d947d77.js",
+        "/tunes/favicon.ico",
+        "/tunes/index.html",
+        "/tunes/main.2fe2e579cc5d58f0.js",
+        "/tunes/manifest.webmanifest",
+        "/tunes/polyfills.710cc2855804a3a1.js",
+        "/tunes/runtime.eb6b22be3ebcba7e.js",
+        "/tunes/scripts.27c1a090a67bf58d.js",
+        "/tunes/styles.d90d23a60cbb756d.css"
+      ],
+      "patterns": []
+    },
+    {
+      "name": "assets",
+      "installMode": "lazy",
+      "updateMode": "prefetch",
+      "cacheQueryOptions": {
+        "ignoreVary": true
+      },
+      "urls": [
+        "/tunes/assets/icons/apple-touch-icon-128x128.png",
+        "/tunes/assets/icons/apple-touch-icon-152x152.png",
+        "/tunes/assets/icons/apple-touch-icon-167x167.png",
+        "/tunes/assets/icons/apple-touch-icon-180x180.png",
+        "/tunes/assets/icons/apple-touch-icon-384x384.png",
+        "/tunes/assets/icons/apple-touch-icon-512x512.png",
+        "/tunes/assets/icons/apple-touch-icon-80x80.png",
+        "/tunes/assets/icons/apple-touch-icon-96x96.png",
+        "/tunes/assets/icons/icon-128x128.png",
+        "/tunes/assets/icons/icon-144x144.png",
+        "/tunes/assets/icons/icon-152x152.png",
+        "/tunes/assets/icons/icon-192x192.png",
+        "/tunes/assets/icons/icon-384x384.png",
+        "/tunes/assets/icons/icon-512x512.png",
+        "/tunes/assets/icons/icon-72x72.png.png",
+        "/tunes/assets/icons/icon-96x96.png",
+        "/tunes/assets/logo.png"
+      ],
+      "patterns": []
+    }
+  ],
+  "dataGroups": [],
+  "hashTable": {
+    "/tunes/914.1f9ca82c00f2a18a.js": "0db7b4ca2ec33df9e0cf4554fd621698a31c75ee",
+    "/tunes/939.2e3806f81d947d77.js": "08af187f4bd910b91427002d8d7d7d1fdb164437",
+    "/tunes/assets/icons/apple-touch-icon-128x128.png": "0eca53ede3326745a19b767685142351ccfc9aec",
+    "/tunes/assets/icons/apple-touch-icon-152x152.png": "8bd07aedc92f45b27c4d9bea7229233782e98c36",
+    "/tunes/assets/icons/apple-touch-icon-167x167.png": "5e22b9183687d41cab3201eb26ba028b2e06feb0",
+    "/tunes/assets/icons/apple-touch-icon-180x180.png": "13ee8356c5bb635bbd9b4ea1d495c6e2ab5be5fe",
+    "/tunes/assets/icons/apple-touch-icon-384x384.png": "beae39cbfa01d1ec6db00723fcfb2342a1b02940",
+    "/tunes/assets/icons/apple-touch-icon-512x512.png": "ee9ab75dd53d82f173bbdd237505be507fab1543",
+    "/tunes/assets/icons/apple-touch-icon-80x80.png": "983bd5a9784dd27162c723965760e48b31f08e03",
+    "/tunes/assets/icons/apple-touch-icon-96x96.png": "a696ff3001cc7c77cdfe6e1cec56a2f450a687bb",
+    "/tunes/assets/icons/icon-128x128.png": "0eca53ede3326745a19b767685142351ccfc9aec",
+    "/tunes/assets/icons/icon-144x144.png": "00156764bebfc4e9525f806d22482e1e100fa3d5",
+    "/tunes/assets/icons/icon-152x152.png": "8bd07aedc92f45b27c4d9bea7229233782e98c36",
+    "/tunes/assets/icons/icon-192x192.png": "35a6297dd09b318db87b15c4623652b936fd05d1",
+    "/tunes/assets/icons/icon-384x384.png": "beae39cbfa01d1ec6db00723fcfb2342a1b02940",
+    "/tunes/assets/icons/icon-512x512.png": "ee9ab75dd53d82f173bbdd237505be507fab1543",
+    "/tunes/assets/icons/icon-72x72.png.png": "c3e780fe3e5cd830bcfd15df9215abd04fcb7c46",
+    "/tunes/assets/icons/icon-96x96.png": "a696ff3001cc7c77cdfe6e1cec56a2f450a687bb",
+    "/tunes/assets/logo.png": "0eca53ede3326745a19b767685142351ccfc9aec",
+    "/tunes/favicon.ico": "c1c98445519a74ef6cd125fdcac9779659f30ab1",
+    "/tunes/index.html": "5209febbc1ffd877d2bffd6c552c8a7a13c67e4d",
+    "/tunes/main.2fe2e579cc5d58f0.js": "ff0ff58fd83034375d24447501153a4130df33d4",
+    "/tunes/manifest.webmanifest": "dbfa48e48523c86d96aa7fd4ead458106898bb75",
+    "/tunes/polyfills.710cc2855804a3a1.js": "27c264791768aab09e0f6e93a2a7f2a9719fb202",
+    "/tunes/runtime.eb6b22be3ebcba7e.js": "ee03dc14bbcbc844e296e126e5501cb7f108b3a9",
+    "/tunes/scripts.27c1a090a67bf58d.js": "d7a5ef3e81899159aa4ed567f4e346d01104b94e",
+    "/tunes/styles.d90d23a60cbb756d.css": "55973a176b9be41c79adf7e2e4a70913f285bae2"
+  },
+  "navigationUrls": [
+    {
+      "positive": true,
+      "regex": "^\\/.*$"
+    },
+    {
+      "positive": false,
+      "regex": "^\\/(?:.+\\/)?[^/]*\\.[^/]*$"
+    },
+    {
+      "positive": false,
+      "regex": "^\\/(?:.+\\/)?[^/]*__[^/]*$"
+    },
+    {
+      "positive": false,
+      "regex": "^\\/(?:.+\\/)?[^/]*__[^/]*\\/.*$"
+    }
+  ],
+  "navigationRequestStrategy": "performance"
+}
