@@ -1,18 +1,20 @@
-<div class="tune-item d-flex flex-column" *ngIf="tune">
+<div class="tune-item d-flex flex-column" *ngIf="tune" [ngClass]="{'favorite': isFavorite$ | async}" (click)="cardClick()">
   <div class="d-flex">
     <div class="tune-img-container">
       <img *ngIf="tune.imageUrl" [src]="tune.imageUrl" class="tune-img">
     </div>
     <div class="pl-2 flex-grow-1">
-      <div class="category-conteiner">
-        <span [innerHtml]="tune.category"></span>
+      <div class="category-conteiner d-flex">
+        <span [innerHtml]="tune.category" class="ml-auto z-top"></span>
+        <i class="tune-icon tune-icon-bookmark ml-2 z-top" *ngIf="isFavorite$ | async"></i>
+        <span class="favorite-highlight-container" *ngIf="isFavorite$ | async"></span>
       </div>
-      <div class="artist-container">
+      <div class="artist-container z-top">
         <span [innerHtml]="tune.artist"></span>
       </div>
     </div>
   </div>
-  <div class="pt-2">
+  <div class="pt-2 z-top">
     <span [innerHtml]="tune.title"></span>
   </div>
   <div *ngIf="tune.link" class="link-container back-gradient d-flex">

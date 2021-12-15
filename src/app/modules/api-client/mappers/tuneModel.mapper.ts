@@ -19,6 +19,7 @@ export function tuneModelMapper(data: any): TuneModel | null {
     imageUrl: imageUrl,
     price: data['im:price']?.label,
     category: data['category']?.attributes?.label,
+    id: data['id']?.attributes['im:id']
   }
 
   return tune;

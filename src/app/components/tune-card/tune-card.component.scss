@@ -47,6 +47,31 @@
   background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, #ffffff 100%);
 }
 
+.tune-icon-bookmark {
+  margin-top: -8px;
+  margin-right: -8px;
+}
+
+.z-top {
+  z-index: 2;
+}
+
+.favorite-highlight-container {
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  height: 40px;
+  width: 50px;
+  border-bottom-left-radius: 15px;
+  z-index: 1;
+
+  background: -moz-linear-gradient(180deg, rgba(255, 255, 255, 0) 50%, #ffe600 100%);
+  background: -webkit-linear-gradient(180deg, rgba(255, 255, 255, 0) 50%, #ffe600 100%);
+  background: -o-linear-gradient(180deg, rgba(255, 255, 255, 0) 50%, #ffe600 100%);
+  background: -ms-linear-gradient(180deg, rgba(255, 255, 255, 0) 50%, #ffe600 100%);
+  background: linear-gradient(45deg, rgba(255, 255, 255, 0) 50%, #ffe600 100%);
+}
+
 @media (min-width: map-get($map: $grid-breakpoints, $key: md)) {
   .tune-item {
     width: 300px;
