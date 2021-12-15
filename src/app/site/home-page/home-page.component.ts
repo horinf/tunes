@@ -67,5 +67,4 @@ export class HomePageComponent implements OnInit, OnDestroy {
     const filteredTunes = this.allTunes.filter(x => x.title.toLowerCase().indexOf(lowered) >= 0 || x.artist.toLowerCase().indexOf(lowered) >= 0);
     this.tunes.next(filteredTunes);
   }
-
 }

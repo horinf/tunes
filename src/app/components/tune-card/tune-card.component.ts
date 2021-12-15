@@ -13,6 +13,5 @@ export class TuneCardComponent implements OnInit {
 
   ngOnInit(): void {
   }
-
 }
 

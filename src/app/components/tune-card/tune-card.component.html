@@ -15,7 +15,9 @@
   <div class="pt-2">
     <span [innerHtml]="tune.title"></span>
   </div>
-  <div *ngIf="tune.link" class="link-container back-gradient">
-    <a [href]="tune.link" target="_blank">play</a>
+  <div *ngIf="tune.link" class="link-container back-gradient d-flex">
+    <a [href]="tune.link" target="_blank" class="ml-auto">
+      <i class="tune-icon tune-icon-play"></i>
+    </a>
   </div>
 </div>

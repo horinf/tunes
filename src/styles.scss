@@ -17,5 +17,18 @@ a:focus {
 }
 
 .horizontal-seporator {
-    border-top: 1px solid gray;
-  }
+  border-top: 1px solid gray;
+}
+
+
+.tune-icon {
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: block;
+}
+
+.tune-icon-play {
+  width: 24px;
+  height: 24px;
+  background-image: url(/assets/icon-play.svg);
+}
