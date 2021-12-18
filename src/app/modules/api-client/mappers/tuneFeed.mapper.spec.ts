@@ -3,7 +3,7 @@ import { tuneFeedMapper } from "./tuneFeed.mapper";
 describe('tuneFeedMapper', () => {
   it('should return null', () => {
     var data = tuneFeedMapper(null);
-    expect(data).toEqual(null);
+    expect(data).toBe(null);
   });
 
   it('should map value', () => {
@@ -11,10 +11,10 @@ describe('tuneFeedMapper', () => {
 
     expect(data?.tunes).toBeDefined;
     expect(data?.tunes[0]).toBeDefined;
-    expect(data?.tunes[0].title).toEqual('30 - Adele');
-    expect(data?.tunes[0].category).toEqual('Pop');
-    expect(data?.tunes[0].artist).toEqual('Adele');;
-    expect(data?.tunes[0].imageUrl).toEqual('https://is5-ssl.mzstatic.com/image/thumb/Music115/v4/73/6d/7c/736d7cfb-c79d-c9a9-4170-5e71d008dea1/886449666430.jpg/170x170bb.png');;
+    expect(data?.tunes[0].title).toBe('30 - Adele');
+    expect(data?.tunes[0].category).toBe('Pop');
+    expect(data?.tunes[0].artist).toBe('Adele');;
+    expect(data?.tunes[0].imageUrl).toBe('https://is5-ssl.mzstatic.com/image/thumb/Music115/v4/73/6d/7c/736d7cfb-c79d-c9a9-4170-5e71d008dea1/886449666430.jpg/170x170bb.png');;
   });
 });
 
