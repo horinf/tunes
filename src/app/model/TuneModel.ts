@@ -6,4 +6,6 @@ export interface TuneModel {
   link: string;
   price: string;
   category: string;
+  rights: string;
+  releaseDate: Date;
 }

@@ -5,23 +5,23 @@ import { ApiClientRouteBuilderService } from 'src/app/modules/api-client/service
 import { HttpClientTestingModule } from '@angular/common/http/testing';
 import { HomePageComponent } from './home-page.component';
 import { LoadingStateModule } from 'src/app/components/loading-state/loading-state.module';
+import { NO_ERRORS_SCHEMA } from '@angular/core';
 
 describe('HomePageComponent', () => {
   let component: HomePageComponent;
   let fixture: ComponentFixture<HomePageComponent>;
 
   beforeEach(async () => {
+    const itunesClientService = {};
     await TestBed.configureTestingModule({
       declarations: [ HomePageComponent ],
       providers: [
-        ItunesClientService,
-        ApiClientRouteBuilderService,
-        ApiClientRequestHandlerService,
+        {
+          provide: ItunesClientService,
+          useValue: itunesClientService
+        },
       ],
-      imports: [
-        HttpClientTestingModule,
-        LoadingStateModule,
-      ]
+      schemas: [NO_ERRORS_SCHEMA],
     })
     .compileComponents();
   });

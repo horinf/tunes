@@ -6,7 +6,7 @@
     <div class="pl-2 flex-grow-1">
       <div class="category-conteiner d-flex">
         <span [innerHtml]="tune.category" class="ml-auto z-top"></span>
-        <i class="tune-icon tune-icon-bookmark ml-2 z-top" *ngIf="isFavorite$ | async"></i>
+        <i class="tune-icon tune-icon-bookmark ml-3 z-top" (click)="favoritClick($event)"></i>
         <span class="favorite-highlight-container" *ngIf="isFavorite$ | async"></span>
       </div>
       <div class="artist-container z-top">
@@ -17,7 +17,7 @@
   <div class="pt-2 z-top">
     <span [innerHtml]="tune.title"></span>
   </div>
-  <div *ngIf="tune.link" class="link-container back-gradient d-flex">
+  <div *ngIf="tune.link" class="link-container back-gradient d-flex z-top">
     <a [href]="tune.link" target="_blank" class="ml-auto"  (click)="linkClick($event)">
       <i class="tune-icon tune-icon-play"></i>
     </a>

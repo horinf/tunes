@@ -23,6 +23,7 @@
   font-size: 14px;
   text-align: right;
   font-weight: bold;
+  font-family: $tunes-font-oswald;
 }
 
 .artist-container {
@@ -48,9 +49,20 @@
 }
 
 .tune-icon-bookmark {
-  margin-top: -8px;
-  margin-right: -8px;
+  opacity: .5;
+  cursor: pointer;
 }
+
+.tune-icon-bookmark:hover {
+  opacity: 1;
+}
+
+.favorite {
+  .tune-icon-bookmark {
+    opacity: 1;
+  }
+}
+
 
 .z-top {
   z-index: 2;
@@ -88,9 +100,9 @@
 
   .tune-item:hover {
     background-color: #eeeaea;
-    min-height: 190px;
-    height: auto;
-    padding-bottom: 40px;
+    // min-height: 190px;
+    // height: auto;
+    // padding-bottom: 40px;
   }
 
   .back-gradient {

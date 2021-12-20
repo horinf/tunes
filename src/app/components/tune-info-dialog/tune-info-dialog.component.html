@@ -1,0 +1,64 @@
+<app-modal-dialog [dialogId]="'app-tune-info-dialog-modal'" [title]="tune?.title">
+  <modal-body>
+    <div *ngIf="tune">
+      <div class="d-flex flex-column flex-lg-row">
+        <div class="tune-img-container flex-grow-1 mb-3 mr-3">
+          <img *ngIf="tune.imageUrl" [src]="tune.imageUrl" class="tune-img">
+        </div>
+        <div class="flex-shrink-1 flex-grow-1">
+          <table class='table table-condensed table-hover mb-0'>
+            <tbody>
+              <tr>
+                <td>Genre:</td>
+                <td>
+                  <span [innerHtml]="tune.category"></span>
+                </td>
+              </tr>
+              <tr>
+                <td>Artist:</td>
+                <td>
+                  <span [innerHtml]="tune.artist"></span>
+                </td>
+              </tr>
+              <tr>
+                <td>Price:</td>
+                <td>
+                  <span [innerHtml]="tune.price"></span>
+                </td>
+              </tr>
+              <tr>
+                <td>Release date:</td>
+                <td>
+                  <span [innerHtml]="tune.releaseDate | date:'medium'"></span>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+
+      <table class='table table-condensed table-hover'>
+        <tbody>
+          <tr>
+            <td>Name:</td>
+            <td>
+              <span [innerHtml]="tune.title"></span>
+            </td>
+          </tr>
+          <tr>
+            <td>Rights:</td>
+            <td>
+              <span [innerHtml]="tune.rights"></span>
+            </td>
+          </tr>
+          <tr>
+            <td>Link:</td>
+            <td>
+              <a [href]="tune.link">https://music.apple.com/</a>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </modal-body>
+</app-modal-dialog>

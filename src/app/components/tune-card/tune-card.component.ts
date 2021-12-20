@@ -1,6 +1,7 @@
 import { Component, Input, OnInit } from '@angular/core';
 import { BehaviorSubject } from 'rxjs';
 import { TuneModel } from 'src/app/model/TuneModel';
+import { EventBusService } from 'src/app/services/event-bus.service';
 import { FavoritesService } from 'src/app/services/favorites.service';
 
 @Component({
@@ -26,6 +27,7 @@ export class TuneCardComponent implements OnInit {
   private _tune?: TuneModel;
 
   constructor(
+    private eventBus: EventBusService,
     private favoritesService: FavoritesService
     ) { }
 
@@ -33,6 +35,15 @@ export class TuneCardComponent implements OnInit {
   }
 
   cardClick() {
+    if (!this._tune) {
+      return;
+    }
+
+    this.eventBus.showTuneInfo(this._tune);
+  }
+
+  favoritClick(event: Event) {
+    event.stopPropagation();
     if (!this._tune) {
       return;
     }

@@ -7,6 +7,7 @@ import { environment } from '../environments/environment';
 import { ApiClientModule } from './modules/api-client/api-client.module';
 import { SiteHeaderModule } from './modules/site-header/site-header.module';
 import { SiteFooterModule } from './modules/site-footer/site-footer.module';
+import { TuneInfoDialogModule } from './components/tune-info-dialog/tune-info-dialog.module';
 
 @NgModule({
   declarations: [
@@ -24,6 +25,7 @@ import { SiteFooterModule } from './modules/site-footer/site-footer.module';
     ApiClientModule,
     SiteHeaderModule,
     SiteFooterModule,
+    TuneInfoDialogModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
